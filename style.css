@@ -112,6 +112,9 @@ marquee {
 }
 
 @media screen and (min-width: 920px) {
+  .img-giggs {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -120,6 +123,10 @@ marquee {
     border: red 3px solid;
     border-left: 1px;
     border-right: 1px;
+  }
+
+  .img-giggs {
+    display: none;
   }
 }
 
@@ -139,6 +146,10 @@ marquee {
     padding-top: 150px;
     font-size: 30px;
   }
+
+  .img-giggs {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -155,6 +166,9 @@ marquee {
   .continue {
     padding-top: 180px;
     font-size: 30px;
+  }
+  .img-giggs {
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
@@ -180,11 +194,12 @@ marquee {
   marquee {
     display: none;
   }
-
-  .wrapper {
-   /*lägg till en transparent bild* - HJÄLP/
-  }
 }
+
+/*.wrapper {
+    background-image: url(./bilder/Fifa98_files/Ryan-Giggs-transparent.png);
+    background-repeat: no-repeat;
+  }*/
 
 @keyframes blinker {
   50% {
