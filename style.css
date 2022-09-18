@@ -104,11 +104,6 @@ marquee {
   padding-top: 30px;
 }
 
-footer {
-  position: absolute;
-  bottom: 10px;
-}
-
 @keyframes blinker {
   50% {
     opacity: 0;
