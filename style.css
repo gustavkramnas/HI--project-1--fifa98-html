@@ -23,6 +23,11 @@ body {
   padding-top: 50px;
 }
 
+audio {
+  width: 100px;
+  margin: -21px;
+}
+
 .fifa {
   font-style: italic;
   text-align: center;
@@ -30,6 +35,7 @@ body {
   font-size: 30px;
   border: hsl(43, 74%, 45%) 4px solid;
   background-color: blue;
+  border-radius: 12px;
   margin: 0;
   width: 350px;
   /* position: absolute; */
@@ -84,12 +90,13 @@ marquee {
   color: yellow;
   font-weight: bold;
   font-size: 30px;
-  margin: 0 auto;
+  margin-top: -40px;
   border-top: 3px solid red;
   border-bottom: 3px solid red;
   /* position: absolute; */
   height: 200px;
   width: 300px;
+
   /* transform: translate(312%); */
 }
 
@@ -104,15 +111,84 @@ marquee {
   padding-top: 30px;
 }
 
-@keyframes blinker {
-  50% {
-    opacity: 0;
+@media screen and (min-width: 920px) {
+}
+
+@media screen and (max-width: 920px) {
+  h1 {
+    font-size: 160px;
+    border: red 3px solid;
+    border-left: 1px;
+    border-right: 1px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .soccer {
-    font-size: 60px;
+@media screen and (max-width: 775px) {
+  h1 {
+    font-size: 120px;
+    border-left: 1px;
+    border-right: 1px;
+  }
+  .rights {
+    font-size: 23px;
+  }
+  .fifa {
+    font-size: 23px;
+  }
+  .continue {
+    padding-top: 150px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 100px;
+    border: 3px red solid;
+  }
+  .rights {
+    font-size: 20px;
+  }
+  .fifa {
+    font-size: 20px;
+  }
+  .continue {
+    padding-top: 180px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 75px;
+    border: red solid 3px;
+  }
+  .rights {
+    font-size: 14px;
+  }
+  .fifa {
+    font-size: 14px;
+  }
+  .continue {
+    padding-top: 380px;
+    font-size: 40px;
+  }
+
+  audio {
+    height: 20px;
+  }
+
+  marquee {
+    display: none;
+  }
+
+  .wrapper {
+   /*lägg till en transparent bild* - HJÄLP/
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }
 
