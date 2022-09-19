@@ -63,6 +63,7 @@ h1 {
   /* position: absolute; */
   /* transform: translate(-50%, -50%); */
   cursor: default;
+  animation: blinker 1s linear infinite;
 }
 
 .rights {
@@ -193,6 +194,15 @@ marquee {
 
   marquee {
     display: none;
+  }
+
+  .giggs img {
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+    height: 500px;
+    z-index: -1;
   }
 }
 
