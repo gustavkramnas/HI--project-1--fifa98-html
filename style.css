@@ -24,6 +24,8 @@ body {
 }
 
 .ball {
+  top: -100px;
+  left: -100px; /*lägger bollen utan skärmen*/
   width: 40px;
   height: 40px;
   position: absolute;
@@ -214,10 +216,6 @@ marquee {
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    cursor: hidden;
-  }
-
   h1 {
     font-size: 75px;
     border: red solid 3px;
