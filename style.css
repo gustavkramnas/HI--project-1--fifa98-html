@@ -124,6 +124,10 @@ marquee {
   padding-top: 30px;
 }
 
+a {
+  color: black;
+}
+
 @media screen and (min-width: 920px) {
   .giggs img {
     background-repeat: no-repeat;
