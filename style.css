@@ -25,7 +25,7 @@ body {
 
 .ball {
   top: -100px;
-  left: -100px; /*lägger bollen utan skärmen*/
+  left: -100px;
   width: 40px;
   height: 40px;
   position: absolute;
@@ -50,8 +50,6 @@ audio {
   border-radius: 12px;
   margin: 0;
   width: 350px;
-  /* position: absolute; */
-  /* transform: translate(-50%, -50%); */
   z-index: 1;
   cursor: default;
   position: relative;
@@ -71,9 +69,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  /* width: 760px; */
-  /* position: absolute; */
-  /* transform: translate(-50%, -50%); */
   cursor: default;
   animation: blinker 1s linear infinite;
 }
@@ -87,9 +82,6 @@ h1 {
   background-color: blue;
   border-radius: 12px;
   margin: 0;
-  /* width: 710px; */
-  /* position: absolute; */
-  /* transform: translate(-50%, -50%); */
   cursor: default;
   margin-bottom: 40px;
   position: relative;
@@ -100,21 +92,18 @@ marquee {
   display: flex;
   justify-content: center;
   font-style: italic;
-  color: yellow;
+  color: #16120f;
   font-weight: bold;
   font-size: 30px;
   margin-top: -40px;
-  border-top: 3px solid red;
-  border-bottom: 3px solid red;
-  /* position: absolute; */
+  border-top: 3px solid blue;
+  border-bottom: 3px solid blue;
   height: 200px;
   width: 300px;
-
-  /* transform: translate(312%); */
+  background-color: red;
 }
 
 .continue {
-  /* position: absolute; */
   font-size: 45px;
   font-style: italic;
   animation: blinker 1s linear infinite;
@@ -144,14 +133,13 @@ a {
     border: red 3px solid;
     border-left: 1px;
     border-right: 1px;
-    opacity: 1;
   }
 
   .giggs img {
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0px;
-    left: px;
+    left: 130px;
     height: 500px;
     z-index: -1;
     display: none;
@@ -173,19 +161,30 @@ a {
     font-size: 23px;
   }
 
+  marquee {
+  }
+
   .continue {
     padding-top: 150px;
     font-size: 30px;
+    color: white;
+  }
+
+  .continue a {
+    font-size: 40px;
   }
 
   .giggs img {
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0px;
-    left: px;
+    left: -50px;
     height: 500px;
     z-index: -1;
-    display: none;
+  }
+
+  a {
+    color: black;
   }
 }
 
@@ -204,18 +203,25 @@ a {
   }
 
   .continue {
-    padding-top: 180px;
     font-size: 30px;
+  }
+
+  marquee {
+    display: none;
   }
 
   .giggs img {
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0px;
-    left: px;
     height: 500px;
     z-index: -1;
-    display: none;
+    display: block;
+    left: 130px;
+  }
+
+  a {
+    color: white;
   }
 }
 
@@ -235,7 +241,7 @@ a {
 
   .continue {
     padding-top: 380px;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   audio {
@@ -249,31 +255,18 @@ a {
 
   .giggs img {
     background-repeat: no-repeat;
-    display: block;
     position: absolute;
-    left: 130px;
     z-index: -1;
   }
-}
 
-/*.wrapper {
-    background-image: url(./bilder/Fifa98_files/Ryan-Giggs-transparent.png);
-    background-repeat: no-repeat;
-  }*/
+  .continue a {
+    font-size: 50px;
+    color: black;
+  }
+}
 
 @keyframes blinker {
   50% {
     opacity: 0;
   }
 }
-
-/*.bg-img {
-  background-image: url(./bilder/background-img-startpage.jpeg);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.9;
-  filter: brightness(50%);
-}
-*/
